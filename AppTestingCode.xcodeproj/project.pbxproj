@@ -49,6 +49,16 @@
 		973397B0260F9525004BE6E1 /* MontlyGoogleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973397AE260F9525004BE6E1 /* MontlyGoogleFactory.swift */; };
 		973397B6260F957D004BE6E1 /* PaymentMethodClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973397B5260F957D004BE6E1 /* PaymentMethodClient.swift */; };
 		973397B7260F957D004BE6E1 /* PaymentMethodClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973397B5260F957D004BE6E1 /* PaymentMethodClient.swift */; };
+		973397BE260F9B7E004BE6E1 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973397BD260F9B7E004BE6E1 /* Command.swift */; };
+		973397BF260F9B7E004BE6E1 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973397BD260F9B7E004BE6E1 /* Command.swift */; };
+		973397C5260F9BA2004BE6E1 /* CreditCardReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973397C4260F9BA2004BE6E1 /* CreditCardReceiver.swift */; };
+		973397C6260F9BA2004BE6E1 /* CreditCardReceiver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973397C4260F9BA2004BE6E1 /* CreditCardReceiver.swift */; };
+		973397CA260F9CB0004BE6E1 /* CreditCardActivateCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973397C9260F9CB0004BE6E1 /* CreditCardActivateCommand.swift */; };
+		973397CB260F9CB0004BE6E1 /* CreditCardActivateCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973397C9260F9CB0004BE6E1 /* CreditCardActivateCommand.swift */; };
+		973397CF260F9DC4004BE6E1 /* CreditCardInvoker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973397CE260F9DC4004BE6E1 /* CreditCardInvoker.swift */; };
+		973397D0260F9DC4004BE6E1 /* CreditCardInvoker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973397CE260F9DC4004BE6E1 /* CreditCardInvoker.swift */; };
+		973397D4260F9F68004BE6E1 /* CreditCardDesactivateCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973397D3260F9F68004BE6E1 /* CreditCardDesactivateCommand.swift */; };
+		973397D5260F9F68004BE6E1 /* CreditCardDesactivateCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973397D3260F9F68004BE6E1 /* CreditCardDesactivateCommand.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +104,11 @@
 		973397A9260F9493004BE6E1 /* PaymentInAdvanceCardFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentInAdvanceCardFactory.swift; sourceTree = "<group>"; };
 		973397AE260F9525004BE6E1 /* MontlyGoogleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MontlyGoogleFactory.swift; sourceTree = "<group>"; };
 		973397B5260F957D004BE6E1 /* PaymentMethodClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodClient.swift; sourceTree = "<group>"; };
+		973397BD260F9B7E004BE6E1 /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		973397C4260F9BA2004BE6E1 /* CreditCardReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardReceiver.swift; sourceTree = "<group>"; };
+		973397C9260F9CB0004BE6E1 /* CreditCardActivateCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardActivateCommand.swift; sourceTree = "<group>"; };
+		973397CE260F9DC4004BE6E1 /* CreditCardInvoker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardInvoker.swift; sourceTree = "<group>"; };
+		973397D3260F9F68004BE6E1 /* CreditCardDesactivateCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardDesactivateCommand.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +175,7 @@
 		9733971F260ED2C7004BE6E1 /* PatronesPracticas */ = {
 			isa = PBXGroup;
 			children = (
+				973397BC260F9AD6004BE6E1 /* Command */,
 				97339781260F90D2004BE6E1 /* AbstractFactory */,
 				9733975B260EFCA5004BE6E1 /* FactoryMethod */,
 				97339720260ED2D3004BE6E1 /* ChainOfResponsability */,
@@ -206,6 +222,18 @@
 				973397B5260F957D004BE6E1 /* PaymentMethodClient.swift */,
 			);
 			path = AbstractFactory;
+			sourceTree = "<group>";
+		};
+		973397BC260F9AD6004BE6E1 /* Command */ = {
+			isa = PBXGroup;
+			children = (
+				973397BD260F9B7E004BE6E1 /* Command.swift */,
+				973397C4260F9BA2004BE6E1 /* CreditCardReceiver.swift */,
+				973397C9260F9CB0004BE6E1 /* CreditCardActivateCommand.swift */,
+				973397CE260F9DC4004BE6E1 /* CreditCardInvoker.swift */,
+				973397D3260F9F68004BE6E1 /* CreditCardDesactivateCommand.swift */,
+			);
+			path = Command;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,13 +341,16 @@
 				973397A5260F93B3004BE6E1 /* AbastractFactory.swift in Sources */,
 				97339722260ED30B004BE6E1 /* ApprovedLoanHandler.swift in Sources */,
 				97339799260F9255004BE6E1 /* MontlyMethod.swift in Sources */,
+				973397CA260F9CB0004BE6E1 /* CreditCardActivateCommand.swift in Sources */,
 				97339735260EDCF2004BE6E1 /* BlackHandler.swift in Sources */,
 				9733978F260F91AB004BE6E1 /* GooglePaymentAbstractFactory.swift in Sources */,
 				9733975D260EFD41004BE6E1 /* Pyment.swift in Sources */,
 				97339730260ED5C3004BE6E1 /* PlatiniumHandler.swift in Sources */,
+				973397C5260F9BA2004BE6E1 /* CreditCardReceiver.swift in Sources */,
 				973396EA260EA072004BE6E1 /* AppDelegate.swift in Sources */,
 				973396EC260EA072004BE6E1 /* SceneDelegate.swift in Sources */,
 				9733976E260EFDEC004BE6E1 /* TypePayment.swift in Sources */,
+				973397D4260F9F68004BE6E1 /* CreditCardDesactivateCommand.swift in Sources */,
 				97339764260EFD65004BE6E1 /* GooglePayment.swift in Sources */,
 				9733973A260EDD4B004BE6E1 /* BankHandler.swift in Sources */,
 				97339783260F9124004BE6E1 /* PaymentAbstractFactory.swift in Sources */,
@@ -327,10 +358,12 @@
 				973397AF260F9525004BE6E1 /* MontlyGoogleFactory.swift in Sources */,
 				97339794260F9219004BE6E1 /* Method.swift in Sources */,
 				9733972A260ED360004BE6E1 /* GoldHandler.swift in Sources */,
+				973397CF260F9DC4004BE6E1 /* CreditCardInvoker.swift in Sources */,
 				973397B6260F957D004BE6E1 /* PaymentMethodClient.swift in Sources */,
 				973397AA260F9493004BE6E1 /* PaymentInAdvanceCardFactory.swift in Sources */,
 				9733979E260F931D004BE6E1 /* PaymentInAdvance.swift in Sources */,
 				97339773260EFE40004BE6E1 /* PaymentFactory.swift in Sources */,
+				973397BE260F9B7E004BE6E1 /* Command.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,8 +371,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				973397BF260F9B7E004BE6E1 /* Command.swift in Sources */,
 				97339795260F9219004BE6E1 /* Method.swift in Sources */,
+				973397CB260F9CB0004BE6E1 /* CreditCardActivateCommand.swift in Sources */,
 				973397B0260F9525004BE6E1 /* MontlyGoogleFactory.swift in Sources */,
+				973397C6260F9BA2004BE6E1 /* CreditCardReceiver.swift in Sources */,
 				973397B7260F957D004BE6E1 /* PaymentMethodClient.swift in Sources */,
 				9733979F260F931D004BE6E1 /* PaymentInAdvance.swift in Sources */,
 				9733977E260F00A4004BE6E1 /* Pyment.swift in Sources */,
@@ -349,9 +385,11 @@
 				97339784260F9124004BE6E1 /* PaymentAbstractFactory.swift in Sources */,
 				9733977B260F009F004BE6E1 /* TypePayment.swift in Sources */,
 				9733978B260F9162004BE6E1 /* CardPaymentAbstractFactory.swift in Sources */,
+				973397D5260F9F68004BE6E1 /* CreditCardDesactivateCommand.swift in Sources */,
 				97339774260EFE40004BE6E1 /* PaymentFactory.swift in Sources */,
 				973397A6260F93B3004BE6E1 /* AbastractFactory.swift in Sources */,
 				973397AB260F9493004BE6E1 /* PaymentInAdvanceCardFactory.swift in Sources */,
+				973397D0260F9DC4004BE6E1 /* CreditCardInvoker.swift in Sources */,
 				97339790260F91AB004BE6E1 /* GooglePaymentAbstractFactory.swift in Sources */,
 				9733979A260F9255004BE6E1 /* MontlyMethod.swift in Sources */,
 			);

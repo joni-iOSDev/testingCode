@@ -22,10 +22,17 @@ class AppTestingCodeTests: XCTestCase {
         payment = PaymentFactory.buildPayment(type: .CARD)
         payment.doPayment()
     }
-    
     // MARK: - TEST Abstract Factory
     func testAbstractFactory() {
         PaymentMethodClient.codigoClient(factory: MontlyGoogleFactory())
         PaymentMethodClient.codigoClient(factory: PaymentInAdvanceCardFactory())
+    }
+    
+    func testCommandPatter() {
+        let client = CreditCardReceiver()
+        let invoker = CreditCardInvoker()
+        let commandReceiver = CreditCardActivateCommand(receiver: client)
+        invoker.setCommand(command: commandReceiver)
+        invoker.run()
     }
 }
